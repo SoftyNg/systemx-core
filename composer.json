@@ -1,0 +1,15 @@
+{
+    "name": "systemx/systemx-core",
+    "autoload": {
+        "psr-4": {
+            "Systemx\\SystemxCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lawrence John",
+            "email": "thelaw111@gmail.com"
+        }
+    ],
+    "require": {}
+}
