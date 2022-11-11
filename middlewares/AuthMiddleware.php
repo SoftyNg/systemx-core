@@ -1,21 +1,21 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/25/2020
+ * User: systemx
+ * Date: 7/25/2022
  * Time: 11:33 AM
  */
 
-namespace thecodeholic\phpmvc\middlewares;
+namespace systemx\SystemxCore\middlewares;
 
 
-use thecodeholic\phpmvc\Application;
-use thecodeholic\phpmvc\exception\ForbiddenException;
+use systemx\SystemxCore\Application;
+use systemx\SystemxCore\exception\ForbiddenException;
 
 /**
  * Class AuthMiddleware
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 class AuthMiddleware extends BaseMiddleware
 {

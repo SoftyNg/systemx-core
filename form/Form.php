@@ -1,19 +1,19 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/9/2020
+ * User: systemx
+ * Date: 7/9/2022
  * Time: 7:05 AM
  */
 
-namespace thecodeholic\phpmvc\form;
+namespace systemx\SystemxCore\form;
 
 
-use thecodeholic\phpmvc\Model;
+use systemx\SystemxCore\Model;
 
 /**
  * Class Form
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
+ * @author  Lawrence John <thelaw111@gmail.com>
  * @package core\form
  */
 class Form

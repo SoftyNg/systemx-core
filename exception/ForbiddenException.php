@@ -1,20 +1,20 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/25/2020
+ * User: systemx
+ * Date: 7/25/2022
  * Time: 11:35 AM
  */
 
-namespace thecodeholic\phpmvc\exception;
+namespace systemx\SystemxCore\exception;
 
 
-use thecodeholic\phpmvc\Application;
+use systemx\SystemxCore\Application;
 
 /**
  * Class ForbiddenException
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc\exception
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore\exception
  */
 class ForbiddenException extends \Exception
 {

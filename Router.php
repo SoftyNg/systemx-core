@@ -1,19 +1,19 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/7/2020
+ * User: systemx
+ * Date: 11/11/2022
  * Time: 10:01 AM
  */
 
-namespace thecodeholic\phpmvc;
+namespace systemx\SystemxCore;
 
-use thecodeholic\phpmvc\exception\NotFoundException;
+use systemx\SystemxCore\exception\NotFoundException;
 
 /**
  * Class Router
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\mvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\mvc
  */
 class Router
 {
@@ -109,7 +109,7 @@ class Router
         }
         if (is_array($callback)) {
             /**
-             * @var $controller \thecodeholic\phpmvc\Controller
+             * @var $controller \systemx\SystemxCore\Controller
              */
             $controller = new $callback[0];
             $controller->action = $callback[1];

@@ -1,18 +1,18 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/24/2020
+ * User: systemx
+ * Date: 7/24/2022
  * Time: 11:18 PM
  */
 
-namespace thecodeholic\phpmvc;
+namespace systemx\SystemxCore;
 
 
 /**
  * Class Session
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 class Session
 {

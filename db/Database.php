@@ -1,20 +1,20 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/10/2020
+ * User: systemx
+ * Date: 7/10/2022
  * Time: 8:09 AM
  */
 
-namespace thecodeholic\phpmvc\db;
+namespace systemx\SystemxCore\db;
 
 
-use thecodeholic\phpmvc\Application;
+use systemx\SystemxCore\Application;
 
 /**
  * Class Database
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 class Database
 {

@@ -1,18 +1,18 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/8/2020
+ * User: systemx
+ * Date: 7/8/2022
  * Time: 8:43 AM
  */
 
-namespace thecodeholic\phpmvc;
+namespace systemx\SystemxCore;
 
-use thecodeholic\phpmvc\middlewares\BaseMiddleware;
+use systemx\SystemxCore\middlewares\BaseMiddleware;
 /**
  * Class Controller
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 class Controller
 {
@@ -20,7 +20,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var \thecodeholic\phpmvc\BaseMiddleware[]
+     * @var \systemx\SystemxCore\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
@@ -40,7 +40,7 @@ class Controller
     }
 
     /**
-     * @return \thecodeholic\phpmvc\middlewares\BaseMiddleware[]
+     * @return \systemx\SystemxCore\middlewares\BaseMiddleware[]
      */
     public function getMiddlewares(): array
     {

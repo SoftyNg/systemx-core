@@ -1,18 +1,18 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/25/2020
+ * User: systemx
+ * Date: 7/25/2022
  * Time: 11:43 AM
  */
 
-namespace thecodeholic\phpmvc\exception;
+namespace systemx\SystemxCore\exception;
 
 
 /**
  * Class NotFoundException
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc\exception
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore\exception
  */
 class NotFoundException extends \Exception
 {

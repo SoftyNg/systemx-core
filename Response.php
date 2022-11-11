@@ -1,18 +1,18 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/7/2020
+ * User: systemx
+ * Date: 11/11/2022
  * Time: 10:53 AM
  */
 
-namespace thecodeholic\phpmvc;
+namespace systemx\SystemxCore;
 
 
 /**
  * Class Response
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 class Response
 {

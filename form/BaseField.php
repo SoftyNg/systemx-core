@@ -1,20 +1,20 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/26/2020
+ * User: systemx
+ * Date: 7/26/2022
  * Time: 3:49 PM
  */
 
-namespace thecodeholic\phpmvc\form;
+namespace systemx\SystemxCore\form;
 
 
-use thecodeholic\phpmvc\Model;
+use systemx\SystemxCore\Model;
 
 /**
  * Class BaseField
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc\form
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore\form
  */
 abstract class BaseField
 {
@@ -26,7 +26,7 @@ abstract class BaseField
     /**
      * Field constructor.
      *
-     * @param \thecodeholic\phpmvc\Model $model
+     * @param \systemx\SystemxCore\Model $model
      * @param string          $attribute
      */
     public function __construct(Model $model, string $attribute)

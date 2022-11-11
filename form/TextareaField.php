@@ -1,18 +1,18 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/26/2020
+ * User: systemx
+ * Date: 7/26/2022
  * Time: 3:49 PM
  */
 
-namespace thecodeholic\phpmvc\form;
+namespace systemx\SystemxCore\form;
 
 
 /**
  * Class TextareaField
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc\form
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore\form
  */
 class TextareaField extends BaseField
 {

@@ -1,19 +1,19 @@
 <?php
 /**
- * User: TheCodeholic
- * Date: 7/25/2020
+ * User: systemx
+ * Date: 7/25/2022
  * Time: 10:13 AM
  */
 
-namespace thecodeholic\phpmvc;
+namespace systemx\SystemxCore;
 
-use thecodeholic\phpmvc\db\DbModel;
+use systemx\SystemxCore\db\DbModel;
 
 /**
  * Class UserModel
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
- * @package thecodeholic\phpmvc
+ * @author  Lawrence John <thelaw111@gmail.com>
+ * @package systemx\SystemxCore
  */
 abstract class UserModel extends DbModel
 {
