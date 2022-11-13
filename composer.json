@@ -1,8 +1,8 @@
 {
-    "name": "systemx/systemx-core",
+    "name": "systemx/systemxcore",
     "autoload": {
         "psr-4": {
-            "systemx\\SystemxCore\\": "src/"
+            "systemx\\SystemxCore\\": "."
         }
     },
     "authors": [
