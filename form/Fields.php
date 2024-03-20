@@ -1,22 +1,25 @@
 <?php
 /**
- * User: systemx
- * Date: 7/9/2022
- * Time: 7:05 AM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore\form;
 
 
 use systemx\SystemxCore\Model;
 
+
 /**
- * Class Field
+ * Class Fields
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package core\form
+ * @package systemx\SystemxCore
  */
-class Field extends BaseField
+
+class Fields extends BaseField
 {
     const TYPE_TEXT = 'text';
     const TYPE_PASSWORD = 'password';
@@ -25,7 +28,7 @@ class Field extends BaseField
     /**
      * Field constructor.
      *
-     * @param \systemx\SystemxCore\Model $model
+     * @param \app\engine\Model $model
      * @param string          $attribute
      */
     public function __construct(Model $model, string $attribute)
@@ -54,5 +57,14 @@ class Field extends BaseField
     {
         $this->type = self::TYPE_FILE;
         return $this;
+    }
+
+    public function textAreaField()
+    {
+        return sprintf('<textarea class="form-control%s" name="%s">%s</textarea>',
+             $this->model->hasError($this->attribute) ? ' is-invalid' : '',
+            $this->attribute,
+            $this->model->{$this->attribute},
+        );
     }
 }

@@ -1,11 +1,13 @@
 <?php
 /**
- * User: systemx
+ * User: Systemx
  * Date: 11/11/2022
- * Time: 10:53 AM
+ * Time: 9:57 AM
  */
 
+
 namespace systemx\SystemxCore;
+
 
 
 /**
@@ -14,7 +16,7 @@ namespace systemx\SystemxCore;
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore
  */
-class Response
+ class Response 
 {
     public function statusCode(int $code)
     {

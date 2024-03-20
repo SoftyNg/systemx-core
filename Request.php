@@ -1,17 +1,21 @@
 <?php
 /**
- * User: systemx
+ * User: Systemx
  * Date: 11/11/2022
- * Time: 10:23 AM
+ * Time: 9:57 AM
  */
 
+
 namespace systemx\SystemxCore;
+
+
+
 
 /**
  * Class Request
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package systemx\mvc
+ * @package systemx\SystemxCore
  */
 class Request
 {

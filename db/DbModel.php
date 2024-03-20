@@ -1,7 +1,7 @@
 <?php
 /**
- * User: systemx
- * Date: 7/10/2022
+ * User: Systemx
+ * Date: 11/11/2022
  * Time: 9:19 AM
  */
 
@@ -13,7 +13,7 @@ use systemx\SystemxCore\Model;
 /**
  * Class DbModel
  *
- * @author  Lawrence John <thelaw111@gmail.com>
+ * @author  Lawrence John <thelaw111@gmail.com> 
  * @package systemx\SystemxCore
  */
 abstract class DbModel extends Model

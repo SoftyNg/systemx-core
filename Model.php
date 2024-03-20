@@ -1,15 +1,16 @@
 <?php
 /**
- * User: systemx
- * Date: 7/8/2022
- * Time: 9:16 AM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore;
 
 
 /**
- * Class Model
+ * Class AuthMiddleware
  *
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore

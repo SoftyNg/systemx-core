@@ -1,20 +1,24 @@
 <?php
 /**
- * User: systemx
+ * User: Systemx
  * Date: 11/11/2022
- * Time: 10:01 AM
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore;
 
+
 use systemx\SystemxCore\exception\NotFoundException;
+
 
 /**
  * Class Router
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package systemx\mvc
+ * @package systemx\SystemxCore
  */
+
 class Router
 {
     private Request $request;
@@ -109,7 +113,7 @@ class Router
         }
         if (is_array($callback)) {
             /**
-             * @var $controller \systemx\SystemxCore\Controller
+             * @var $controller \app\engine\Controller
              */
             $controller = new $callback[0];
             $controller->action = $callback[1];

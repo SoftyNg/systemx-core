@@ -1,7 +1,7 @@
 <?php
 /**
- * User: systemx
- * Date: 7/10/2022
+ * User: Systemx
+ * Date: Date: 11/11/2022
  * Time: 8:09 AM
  */
 
@@ -13,7 +13,7 @@ use systemx\SystemxCore\Application;
 /**
  * Class Database
  *
- * @author  Lawrence John <thelaw111@gmail.com>
+ * @author  Lawrence John <thelaw111@gmail.com> 
  * @package systemx\SystemxCore
  */
 class Database

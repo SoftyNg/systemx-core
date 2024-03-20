@@ -1,9 +1,10 @@
 <?php
 /**
- * User: systemx
- * Date: 7/24/2022
- * Time: 11:18 PM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore;
 
@@ -14,6 +15,7 @@ namespace systemx\SystemxCore;
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore
  */
+
 class Session
 {
     protected const FLASH_KEY = 'flash_messages';

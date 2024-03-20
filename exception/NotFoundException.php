@@ -1,7 +1,7 @@
 <?php
 /**
- * User: systemx
- * Date: 7/25/2022
+ * User: Systemx
+ * Date: 7/25/2020
  * Time: 11:43 AM
  */
 
@@ -11,7 +11,7 @@ namespace systemx\SystemxCore\exception;
 /**
  * Class NotFoundException
  *
- * @author  Lawrence John <thelaw111@gmail.com>
+ * @author  Lawrence John <thelaw111@gmail.com> 
  * @package systemx\SystemxCore\exception
  */
 class NotFoundException extends \Exception

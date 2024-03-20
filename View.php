@@ -1,9 +1,10 @@
 <?php
 /**
- * User: systemx
- * Date: 7/26/2022
- * Time: 2:45 PM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore;
 
@@ -14,6 +15,7 @@ namespace systemx\SystemxCore;
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore
  */
+
 class View
 {
     public string $title = '';
@@ -24,14 +26,14 @@ class View
         if (Application::$app->controller) {
             $layoutName = Application::$app->controller->layout;
         }
-        $viewContent = $this->renderViewOnly($view, $params);
+        $viewContent = $this->_renderViewOnly($view, $params);
         ob_start();
         include_once Application::$ROOT_DIR."/views/layouts/$layoutName.php";
         $layoutContent = ob_get_clean();
         return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
-    public function renderViewOnly($view, array $params)
+    private function _renderViewOnly($view, array $params)
     {
         foreach ($params as $key => $value) {
             $$key = $value;

@@ -5,16 +5,20 @@
  * Time: 9:57 AM
  */
 
+
 namespace systemx\SystemxCore;
 
+
 use systemx\SystemxCore\db\Database;
+
 
 /**
  * Class Application
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package app
+ * @package systemx\SystemxCore
  */
+
 class Application
 {
     const EVENT_BEFORE_REQUEST = 'beforeRequest';

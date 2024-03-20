@@ -1,21 +1,24 @@
 <?php
 /**
- * User: systemx
- * Date: 7/9/2022
- * Time: 7:05 AM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore\form;
 
 
 use systemx\SystemxCore\Model;
 
+
 /**
- * Class Form
+ * Class  Form
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package core\form
+ * @package systemx\SystemxCore
  */
+
 class Form
 {
     public static function begin($action, $method, $options = [])
@@ -35,7 +38,7 @@ class Form
 
     public function field(Model $model, $attribute)
     {
-        return new Field($model, $attribute);
+        return new Fields($model, $attribute);
     }
 
 }

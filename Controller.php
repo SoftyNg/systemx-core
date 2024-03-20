@@ -1,18 +1,18 @@
 <?php
 /**
- * User: systemx
- * Date: 7/8/2022
+ * User: Systemx
+ * Date: 11/11/2022
  * Time: 8:43 AM
  */
 
-namespace systemx\SystemxCore;
+namespace app\engine;
 
-use systemx\SystemxCore\middlewares\BaseMiddleware;
+use app\engine\middlewares\BaseMiddleware;
 /**
  * Class Controller
  *
- * @author  Lawrence John <thelaw111@gmail.com>
- * @package systemx\SystemxCore
+ * @author  Lawrence John<thelaw111@gmail.com>
+ * @package app\engine
  */
 class Controller
 {
@@ -20,7 +20,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var \systemx\SystemxCore\BaseMiddleware[]
+     * @var \app\engine\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
@@ -40,7 +40,7 @@ class Controller
     }
 
     /**
-     * @return \systemx\SystemxCore\middlewares\BaseMiddleware[]
+     * @return \app\engine\middlewares\BaseMiddleware[]
      */
     public function getMiddlewares(): array
     {

@@ -1,21 +1,24 @@
 <?php
 /**
- * User: systemx
- * Date: 7/26/2022
- * Time: 3:49 PM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
 
-namespace systemx\SystemxCore\form;
+
+namespace systemx\SystemxCore;
 
 
 use systemx\SystemxCore\Model;
+
 
 /**
  * Class BaseField
  *
  * @author  Lawrence John <thelaw111@gmail.com>
- * @package systemx\SystemxCore\form
+ * @package systemx\SystemxCore
  */
+
 abstract class BaseField
 {
 
@@ -26,7 +29,7 @@ abstract class BaseField
     /**
      * Field constructor.
      *
-     * @param \systemx\SystemxCore\Model $model
+     * @param \app\engine\Model $model
      * @param string          $attribute
      */
     public function __construct(Model $model, string $attribute)

@@ -1,19 +1,21 @@
 <?php
 /**
- * User: systemx
- * Date: 7/25/2022
- * Time: 11:33 AM
+ * User: Systemx
+ * Date: 11/11/2022
+ * Time: 9:57 AM
  */
+
 
 namespace systemx\SystemxCore\middlewares;
 
 
 /**
- * Class BaseMiddleware
+ * Class BaseMiddlware
  *
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore
  */
+
 abstract class BaseMiddleware
 {
     abstract public function execute();
