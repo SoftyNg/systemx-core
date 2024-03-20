@@ -5,9 +5,9 @@
  * Time: 8:43 AM
  */
 
-namespace app\engine;
+namespace systemx\SystemxCore;
 
-use app\engine\middlewares\BaseMiddleware;
+use systemx\SystemxCore\middlewares\BaseMiddleware;
 /**
  * Class Controller
  *
@@ -20,7 +20,7 @@ class Controller
     public string $action = '';
 
     /**
-     * @var \app\engine\BaseMiddleware[]
+     * @var systemx\SystemxCore\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
