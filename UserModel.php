@@ -7,7 +7,7 @@
 
 
  namespace systemx\SystemxCore;
- 
+ use  systemx\SystemxCore\db\DbModel;
  
  /**
   * Class UserModel
