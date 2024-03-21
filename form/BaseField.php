@@ -6,7 +6,7 @@
  */
 
 
-namespace systemx\SystemxCore;
+namespace systemx\SystemxCore\form;
 
 
 use systemx\SystemxCore\Model;
