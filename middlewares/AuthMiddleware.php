@@ -8,7 +8,7 @@
 namespace systemx\SystemxCore\middlewares;
 
 
-use systemx\SystemxCore\Application;
+use systemx\SystemxCore\Systemx;
 use systemx\SystemxCore\exception\ForbiddenException;
 
 /**
@@ -28,8 +28,8 @@ class AuthMiddleware extends BaseMiddleware
 
     public function execute()
     {
-        if (Application::isGuest()) {
-            if (empty($this->actions) || in_array(Application::$app->controller->action, $this->actions)) {
+        if (Systemx::isGuest()) {
+            if (empty($this->actions) || in_array(Systemx::$app->controller->action, $this->actions)) {
                 throw new ForbiddenException();
             }
         }

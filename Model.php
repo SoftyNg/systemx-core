@@ -83,7 +83,7 @@ class Model
                     $className = $rule['class'];
                     $uniqueAttr = $rule['attribute'] ?? $attribute;
                     $tableName = $className::tableName();
-                    $db = Application::$app->db;
+                    $db = Systemx::$app->db;
                     $statement = $db->prepare("SELECT * FROM $tableName WHERE $uniqueAttr = :$uniqueAttr");
                     $statement->bindValue(":$uniqueAttr", $value);
                     $statement->execute();

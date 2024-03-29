@@ -117,7 +117,7 @@ class Router
              */
             $controller = new $callback[0];
             $controller->action = $callback[1];
-            Application::$app->controller = $controller;
+            Systemx::$app->controller = $controller;
             $middlewares = $controller->getMiddlewares();
             foreach ($middlewares as $middleware) {
                 $middleware->execute();
@@ -129,11 +129,11 @@ class Router
 
     public function renderView($view, $params = [])
     {
-        return Application::$app->view->renderView($view, $params);
+        return Systemx::$app->view->renderView($view, $params);
     }
 
     public function renderViewOnly($view, $params = [])
     {
-        return Application::$app->view->renderViewOnly($view, $params);
+        return Systemx::$app->view->renderViewOnly($view, $params);
     }
 }

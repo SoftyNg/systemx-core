@@ -13,20 +13,20 @@ use systemx\SystemxCore\db\Database;
 
 
 /**
- * Class Application
+ * Class Systemx
  *
  * @author  Lawrence John <thelaw111@gmail.com>
  * @package systemx\SystemxCore
  */
 
-class Application
+class Systemx
 {
     const EVENT_BEFORE_REQUEST = 'beforeRequest';
     const EVENT_AFTER_REQUEST = 'afterRequest';
 
     protected array $eventListeners = [];
 
-    public static Application $app;
+    public static Systemx $app;
     public static string $ROOT_DIR;
     public string $userClass;
     public string $layout = 'main';
@@ -52,7 +52,7 @@ class Application
         $this->session = new Session();
         $this->view = new View();
 
-        $userId = Application::$app->session->get('user');
+        $userId = Systemx::$app->session->get('user');
         if ($userId) {
             $key = $this->userClass::primaryKey();
             $this->user = $this->userClass::findOne([$key => $userId]);
@@ -70,7 +70,7 @@ class Application
         $className = get_class($user);
         $primaryKey = $className::primaryKey();
         $value = $user->{$primaryKey};
-        Application::$app->session->set('user', $value);
+        Systemx::$app->session->set('user', $value);
 
         return true;
     }

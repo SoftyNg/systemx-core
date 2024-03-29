@@ -7,7 +7,7 @@
 
 namespace systemx\SystemxCore\db;
 
-use systemx\SystemxCore\Application;
+use systemx\SystemxCore\Systemx;
 use systemx\SystemxCore\Model;
 
 /**
@@ -41,7 +41,7 @@ abstract class DbModel extends Model
 
     public static function prepare($sql): \PDOStatement
     {
-        return Application::$app->db->prepare($sql);
+        return Systemx::$app->db->prepare($sql);
     }
 
     public static function findOne($where)

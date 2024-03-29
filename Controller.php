@@ -31,7 +31,7 @@ class Controller
 
     public function render($view, $params = []): string
     {
-        return Application::$app->router->renderView($view, $params);
+        return Systemx::$app->router->renderView($view, $params);
     }
 
     public function registerMiddleware(BaseMiddleware $middleware)
