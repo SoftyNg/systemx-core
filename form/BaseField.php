@@ -25,6 +25,8 @@ abstract class BaseField
     public Model $model;
     public string $attribute;
     public string $type;
+    public string $classstyle;
+    public string $id;
 
     /**
      * Field constructor.
@@ -32,10 +34,13 @@ abstract class BaseField
      * @param \app\engine\Model $model
      * @param string          $attribute
      */
-    public function __construct(Model $model, string $attribute)
+    public function __construct(Model $model, string $attribute, string $type, string $classstyle, string $id)
     {
         $this->model = $model;
         $this->attribute = $attribute;
+        $this->type = $type;
+        $this->classstyle = $classstyle;
+        $this->id = $id;
     }
 
     public function __toString()

@@ -21,6 +21,7 @@ use systemx\SystemxCore\Model;
 
 class Form
 {
+    
     public static function begin($action, $method, $options = [])
     {
         $attributes = [];
@@ -31,14 +32,16 @@ class Form
         return new Form();
     }
 
+ 
+
     public static function end()
     {
         echo '</form>';
     }
 
-    public function field(Model $model, $attribute)
+    public function inputField(Model $model, $attribute, $type="text", $classstyle="form-control", $id="")
     {
-        return new Fields($model, $attribute);
+        return new Fields($model, $attribute, $type, $classstyle, $id);
     }
 
 }
