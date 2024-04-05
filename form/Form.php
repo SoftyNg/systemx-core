@@ -39,9 +39,9 @@ class Form
         echo '</form>';
     }
 
-    public function inputField(Model $model, $attribute, $type="text", $classstyle="form-control", $id="")
+    public function inputField(Model $model, $attribute, $type="text", $classstyle="form-control", $id="", $placeholder="")
     {
-        return new Fields($model, $attribute, $type, $classstyle, $id);
+        return new Fields($model, $attribute, $type, $classstyle, $id, $placeholder);
     }
 
 }

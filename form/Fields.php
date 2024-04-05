@@ -28,24 +28,23 @@ class Fields extends BaseField
      * Field constructor.
      *
      * @param \app\engine\Model $model
-     * @param string          $attribute
-     *  @param string          $classstyle
-     * @param string          $type
+     * 
      */
-    public function __construct(Model $model, string $attribute, string $type, string $classstyle, string $id)
+    public function __construct(Model $model, string $attribute, string $type, string $classstyle, string $id, string $placeholder)
     {
         
-        parent::__construct($model, $attribute, $type, $classstyle, $id);
+        parent::__construct($model, $attribute, $type, $classstyle, $id, $placeholder);
     }
 
     public function renderInput()
     {
-        return sprintf('<input type="%s" class="%s" name="%s" value="%s" id="%s">',
+        return sprintf('<input type="%s" class="%s" name="%s" value="%s" id="%s" placholder="%s">',
             $this->type,
             $this->model->hasError($this->attribute) ? 'form-control is-invalid' : $this->classstyle,
             $this->attribute,
             $this->model->{$this->attribute},
             $this->id,
+            $this->placeholder,
         );
     }
 
