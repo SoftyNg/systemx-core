@@ -68,6 +68,45 @@ class Database
         )  ENGINE=INNODB;");
     }
 
+    public function rollbackMigrations()
+    {
+        // 1. Get the very last migration record from the database
+        $statement = $this->pdo->prepare("SELECT migration FROM migrations ORDER BY id DESC LIMIT 1");
+        $statement->execute();
+        $lastMigration = $statement->fetchColumn();
+
+        if (!$lastMigration) {
+            $this->log("No migrations found to rollback.");
+            return;
+        }
+
+        // 2. Locate the migration file
+        $file = Systemx::$ROOT_DIR . '/migrations/' . $lastMigration;
+        if (file_exists($file)) {
+            require_once $file;
+            $className = pathinfo($lastMigration, PATHINFO_FILENAME);
+            $instance = new $className();
+
+            $this->log("Rolling back migration $lastMigration");
+            
+            // 3. Execute the down() method in your migration file
+            $instance->down(); 
+            
+            // 4. Remove the record from the migrations table
+            $this->deleteMigration($lastMigration);
+            $this->log("Rolled back migration $lastMigration");
+        } else {
+            $this->log("Migration file $lastMigration not found on disk.");
+        }
+    }
+
+    protected function deleteMigration($migrationName)
+    {
+        $statement = $this->pdo->prepare("DELETE FROM migrations WHERE migration = :mig");
+        $statement->bindValue(':mig', $migrationName);
+        $statement->execute();
+    }
+
     protected function getAppliedMigrations()
     {
         $statement = $this->pdo->prepare("SELECT migration FROM migrations");
